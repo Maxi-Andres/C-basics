@@ -3,42 +3,46 @@
 // https://en.wikipedia.org/wiki/C_data_types
 
 // El tamaño de los tipos de datos puede variar dependiendo de la plataforma (32 bits vs 64 bits) y el compilador utilizado. Los valores de rango son aproximados y pueden variar ligeramente según el sistema operativo y la configuración del compilador.
+
 // 1. int: Representa números enteros
-    int entero = 42; //* Declaration + Initialization 
-    
-    // 2. long: Entero de mayor tamaño (dependiendo de la arquitectura)
-    long enteroLargo = 2147483647;
-    
-    // 3. long long: Entero de mayor tamaño que long (al menos 8 bytes)
-    long long enteroLargoLargo = 9223372036854775807;
+int entero = 42; //* Declaration + Initialization 
 
-    // 4. float: Representa números decimales de precisión simple
-    float flotante = 3.14f;
-    
-    // 5. double: Representa números decimales de mayor precisión (generalmente 8 bytes)
-    double numeroGrande = 1234567890.123456789;
+// 2. long: Entero de mayor tamaño (dependiendo de la arquitectura)
+long enteroLargo = 2147483647;
 
-    // 6. long double: Tipo de punto flotante de mayor precisión (dependiendo de la plataforma, puede ser de 12 o 16 bytes)
-    long double numeroGrandeLargo = 1234567890.123456789123456789;
+// 3. long long: Entero de mayor tamaño que long (al menos 8 bytes)
+long long enteroLargoLargo = 9223372036854775807;
 
-    // 7. char: Representa un solo carácter (generalmente 1 byte)
-    char caracter = 'A';
+// 4. float: Representa números decimales de precisión simple
+float flotante = 3.14f;
 
-    // 8. unsigned int: Entero sin signo
-    unsigned int enteroSinSigno = 42;
-    
-    // 9. unsigned long: Entero largo sin signo
-    unsigned long enteroLargoSinSigno = 2147483647;
-    
-    // 10. unsigned char: Carácter sin signo (0 a 255)
-    unsigned char caracterSinSigno = 255;
+// 5. double: Representa números decimales de mayor precisión (generalmente 8 bytes)
+double numeroGrande = 1234567890.123456789;
 
-    // 11. _Bool: Representa un valor lógico (true o false)
-    _Bool esVerdadero = 1; // true (1)
-    _Bool esFalso = 0; // false (0)
+// 6. long double: Tipo de punto flotante de mayor precisión (dependiendo de la plataforma, puede ser de 12 o 16 bytes)
+long double numeroGrandeLargo = 1234567890.123456789123456789;
 
-    // 12. void: No tiene valor (usado en funciones que no retornan valor)
-    void* punteroNulo = NULL;
+// 7. char: Representa un solo carácter (generalmente 1 byte)
+char caracter = 'A';
+
+// 8. unsigned int: Entero sin signo
+unsigned int enteroSinSigno = 42;
+
+// 9. unsigned long: Entero largo sin signo
+unsigned long enteroLargoSinSigno = 2147483647;
+
+// 10. unsigned char: Carácter sin signo (0 a 255)
+unsigned char caracterSinSigno = 255;
+
+// 11. _Bool: Representa un valor lógico (true o false)
+_Bool esVerdadero = 1; // true (1)
+_Bool esFalso = 0; // false (0)
+
+// 12. void: No tiene valor (usado en funciones que no retornan valor)
+void* punteroNulo = NULL;
+
+// 13. Array of characters esto no es un datatype pero es la manera de guardar "cadenas" que tene C
+char name[] = "Maxi";
 
 int main() {
 
@@ -55,8 +59,9 @@ int main() {
     printf("_Bool (true): %d\n", esVerdadero);
     printf("_Bool (false): %d\n", esFalso);
     printf("void*: %p\n", punteroNulo);
+    printf("Hello: %s\n", name);
 
-    // ========================================================================
+// ========================================================================
 
     // Tipos compuestos (más complejos)
     // 1. Arrays: Una colección de elementos del mismo tipo.
@@ -74,7 +79,7 @@ int main() {
     snprintf(persona1.nombre, sizeof(persona1.nombre), "Juan");
     printf("Nombre: %s, Edad: %d\n", persona1.nombre, persona1.edad);
 
-    // ========================================================================
+// ========================================================================
 
     // Variables y buenas prácticas en C
     int x = 10; // Declaración de una variable.
@@ -88,7 +93,7 @@ int main() {
     // y = 40; // Esto generaría un error de compilación, ya que `y` es constante.
     printf("Valor de y (constante): %d\n", y);
 
-    // ========================================================================
+// ========================================================================
 
     // Ámbito de variables
     if (1) {
