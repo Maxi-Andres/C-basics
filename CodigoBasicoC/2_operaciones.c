@@ -33,7 +33,7 @@ int main() {
         modulo = 0;
     }
 
-    // Operaciones bit a bit
+    // Operaciones bit a bit (bitwise)
     bit_and = num1 & num2;
     bit_or = num1 | num2;
     bit_xor = num1 ^ num2;
