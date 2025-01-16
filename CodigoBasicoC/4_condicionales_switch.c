@@ -87,5 +87,15 @@ int main() {
             printf("  Operación no válida.\n");
     }
 
+    //* Operador ternario
+
+    int x = 10, y = 20;
+
+    // Uso del operador ternario para encontrar el mayor de dos números
+    int mayor = (x > y) ? x : y;
+
+    // Imprimir el resultado
+    printf("El número mayor entre %d y %d es: %d\n", x, y, mayor);
+
     return 0;
 }
