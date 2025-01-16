@@ -15,7 +15,7 @@ int main() {
         j++;
     }
 
-    // Ejemplo de bucle do-while
+    // Ejemplo de bucle do-while hace si o si una iteracion a diferencia de while
     printf("\nBucle do-while:\n");
     int k = 0;
     do {
