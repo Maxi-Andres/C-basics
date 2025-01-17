@@ -46,7 +46,7 @@ int main() {
     //strnset(string1, 'x', 1);         //sets first n characters of a string to a given character
     //strrev(string1);                  //reverses a string
 
-    //int result = strlen(string1);                 // returns string length as int
+    //int result = strlen(string1);                 // returns string length as int, sin contar el \0 como lo haria sizeof()
     int result = strcmp(string1, string2);        // string compare all characters
     //int result = strncmp(string1, string2, 1);    // string compare n characters
     //int result = strcmpi(string1, string1);       // string compare all (ignore case)

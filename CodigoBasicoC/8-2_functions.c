@@ -2,9 +2,9 @@
 
 // Declaración de funciones, las que devuelven enteros son int las que no devuelven nada son void y asi... Se le dice prototype function
 
-int sumar(int a, int b);                      // Función que retorna un valor
-void imprimirMensaje(const char *mensaje);   // Función void que no retorna nada
-void intercambiar(int *x, int *y);           // Función con paso de parámetros por referencia
+int sumar(int a, int b);                     // Función que retorna un valor, pasando parámetros por valor
+void imprimirMensaje(const char *mensaje);   // Función void que no retorna nada, usada para realizar una acción
+void intercambiar(int *x, int *y);           // Función con paso de parámetros por referencia, modifica valores originales
 int factorial(int n);                        // Función recursiva
 
 // Función principal
@@ -15,6 +15,7 @@ int main() {
     // Llamada a una función que retorna un valor
     int suma = sumar(num1, num2);
     printf("La suma de %d y %d es: %d\n", num1, num2, suma);
+    // `num1` y `num2` no cambian porque se pasan por valor, no por referencia.
 
     // Llamada a una función void
     imprimirMensaje("¡Hola desde una función void!");
@@ -23,6 +24,7 @@ int main() {
     printf("Antes de intercambiar: num1 = %d, num2 = %d\n", num1, num2);
     intercambiar(&num1, &num2);
     printf("Después de intercambiar: num1 = %d, num2 = %d\n", num1, num2);
+    //`num1` y `num2` se modifican directamente, ya que se pasa un puntero a su memoria.
 
     // Uso de una función recursiva
     int numero = 5;
@@ -35,6 +37,7 @@ int main() {
 
 // Función que retorna la suma de dos números
 int sumar(int a, int b) {
+    a++;    // Modifica solo la copia local de `a`
     return a + b;
 }
 
@@ -48,6 +51,7 @@ void intercambiar(int *x, int *y) {
     int temp = *x;
     *x = *y;
     *y = temp;
+    // Modifica directamente los valores originales usando sus direcciones de memoria.
 }
 
 // Función recursiva para calcular el factorial de un número
