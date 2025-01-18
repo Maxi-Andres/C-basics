@@ -99,6 +99,3 @@ int main() {
 
     return 0;
 }
-
-
-//! 2:22:00 falta random num y los prints que no estan en el tuto, voy por matrixces y me salt structs
