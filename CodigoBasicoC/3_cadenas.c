@@ -62,5 +62,14 @@ int main() {
         printf("string1 es mayor que string2.\n");
     }
 
+    char cars[][10] = {"Mustang", "Corvette", "Camaro"}; // esto es una array de strings
+    //cars[0] = "Tesla"; Esto no funciona lo que tendrias que hacer es
+    strcpy(cars[0], "Tesla");
+
+    for(int i = 0; i < sizeof(cars) / sizeof(cars[0]); i++){
+        printf("%s \n", cars[i]);
+    }
+
+
     return 0;
 }
