@@ -8,7 +8,7 @@ struct Persona {
     float altura;
 };
 
-// Uso de typedef para simplificar el uso de structs
+//! Uso de typedef para simplificar el uso de structs
 typedef struct {
     char nombre[50];
     int edad;
@@ -92,8 +92,3 @@ int main() {
 
     return 0;
 }
-
-
-
-//! 2:50:00 falta random num y los prints que no estan en el tuto
-// memoria dinamica arch texto y arch dinamicos
