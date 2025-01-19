@@ -38,7 +38,7 @@ int main() {
     bit_or = num1 | num2;
     bit_xor = num1 ^ num2;
 
-    // Operaciones de desplazamiento
+    // Operaciones de desplazamiento (bitwise tambien)
     desplazamiento_izq = num1 << 1; // Desplazamiento de los bits a la izquierda
     desplazamiento_der = num1 >> 1; // Desplazamiento de los bits a la derecha
 

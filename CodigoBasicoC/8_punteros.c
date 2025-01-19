@@ -19,12 +19,12 @@ int main() {
 
     printf("Valor de numero: %d\n", numero);
     printf("Dirección de numero: %p\n", (void*)&numero);
-    printf("Valor almacenado en puntero: %p\n", (void*)puntero); // supuestamente lo tenes que convertir en (void*) para evitar errores pero yo no note nada
+    printf("Valor almacenado en puntero: %p\n", (void*)puntero); // supuestamente lo tenes que convertir en (void*) para evitar errores pero yo no note nada si no lo uso...
     printf("Valor al que apunta el puntero: %d\n", *puntero);
 
     // printf("Valor de numero: %d\n", numero);
-    // printf("Dirección de numero (&numero): %p\n", &numero);
-    // printf("Contenido del puntero (*puntero): %d\n", *puntero);
+    // printf("Dirección de numero: %p\n", &numero);
+    // printf("Contenido del puntero: %d\n", *puntero);
     // printf("Dirección almacenada en puntero: %p\n", puntero);
 
     // Modificación del valor usando el puntero

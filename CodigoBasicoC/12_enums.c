@@ -17,8 +17,3 @@ int main(){
 
     return 0;
 }
-
-
-
-//! 2:50:00 falta random num y los prints que no estan en el tuto
-// memoria dinamica arch texto y arch binarios
