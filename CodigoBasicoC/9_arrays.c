@@ -46,7 +46,7 @@ int main() {
 
     // ------------------ Matrices (arrays multidimensionales) ------------------
     int numbers[2][3] = {{1, 2, 3},
-                         {4, 5, 6}}; // Declaración e inicialización
+                        {4, 5, 6}}; // Declaración e inicialización
 
     // Cálculo de filas y columnas
     int rows = sizeof(numbers) / sizeof(numbers[0]); // Tamaño de la matriz / Tamaño de una fila
