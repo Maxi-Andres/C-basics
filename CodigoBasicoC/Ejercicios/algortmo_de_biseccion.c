@@ -9,7 +9,7 @@ float biseccion(float a, float b, float epsilon) {
 
     float c = 0;
 
-    while(b - a >= epsilon){ // error que aceptas
+    while(b - a >= epsilon){ // rango del error que aceptas
         c = (a + b) / 2;
         if(funcion(c) == 0){
             return c;
