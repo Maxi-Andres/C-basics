@@ -109,6 +109,7 @@ int main() {
     // Ejemplos adicionales de tipos de datos
     char a = 'C';                   // single character    %c
     char b[] = "Bro";            // array of characters %s  
+    char* cars[] = {"BMW", "Mustang", "Corvette"}; // es un array de punteros a char, donde cada puntero apunta al inicio de una cadena literal ("BMW", etc.). !Los arrays no pueden cambiar de tamaño
 
     float c = 3.141592;                          // 4 bytes (32 bits of precision) 6 - 7 digits %f
     double d = 3.141592653589793; // 8 bytes (64 bits of precision) 15 - 16 digits %lf
