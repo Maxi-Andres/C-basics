@@ -87,7 +87,7 @@ int main() {
             printf("  Operación no válida.\n");
     }
 
-    //* Operador ternario
+    //! Operador ternario
 
     int x = 10, y = 20;
 

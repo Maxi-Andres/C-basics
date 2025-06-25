@@ -4,7 +4,7 @@
 
 int main(){
 
-    srand(time(NULL));
+    srand(time(NULL)); // devuelve el tiempo actual en segundos desde el 1 de enero de 1970 (epoch time). sino le podes poner un numero pero siempre daria lo mismo
 
     int max = 6, min = 1;
 
